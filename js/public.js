@@ -13,7 +13,7 @@
   // ---------- chrome ----------
   M.wordmark = () => {
     const parts = M.cache.settings.siteName.trim().split(/\s+/); const last = parts.pop();
-    return '<a class="wordmark" href="#/" aria-label="' + esc(M.cache.settings.siteName) + ' — home"><span class="w1" aria-hidden="true">' + esc(parts.join(" ")) + " <em>" + esc(last) + '</em></span><span class="w2" aria-hidden="true">a little corner</span></a>';
+    return '<a class="wordmark" href="#/" aria-label="' + esc(M.cache.settings.siteName) + ' — home"><span class="w1" aria-hidden="true">' + esc(parts.join(" ")) + " <em>" + esc(last) + '</em></span><span class="w2" aria-hidden="true">a guidance to growth</span></a>';
   };
   M.renderHeader = (route) => {
     const nav = NAV.map((n) => '<a class="ulink" href="' + n[2] + '"' + (route === n[0] ? ' aria-current="page"' : "") + ">" + n[1] + "</a>").join("");
